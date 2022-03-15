@@ -1,115 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <img src="img/tecnologia.jpg" class="tec">
     <h1 class="title">SOBRE NÓS</h1>
     <style>
-    body, html{
-        background: #210334; 
-    }.tec{
-        width: 100%;
-        height: 13cm;
-        z-index: 0;
-        border: 2px solid black;
-    }.home{
-        position: relative;
-        width: 60px;
-        padding: 15px;
-        right: 6px;
-        background-color: #2f3640;
-        top: 155px;
-    }.title{
-        color: white;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 3em;
-        text-align: center;
-        position: relative;
-        bottom: 2.5cm;
-    }button{
-        background: none;
-        position: relative;
-        border-radius: 24px;
-        border: 0;
-        right: 6px;
-    }.sidebar{
-        height:100%; /* VAI OCUPAR 100% DA ALTURA DA PAGINA */
-        width: 0; /* ALTERA COM JAVASCRIPT */
-        position: fixed; /* SERVE PRA MANTER NO LUGAR */
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden; /* DESABILIDA O SCROLL VERTICAL!!!!!!!!!!!!!!! */
-        padding-top: 60px;
-        transition: 0.5s;
-    }.sidebar a{
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }.sidebar a:hover{
-        color: #f1f1f1;
-        /* POSIÇÃO E STYLE DO CLOSE BUTTON (top right corner) */
-    }.sidebar .closebtn{
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }.openbtn{
-        font-size: 20px;
-        cursor: pointer;
-        background-color: #111;
-        color: white;
-        padding: 10px 15px;
-        border: 2px solid white;
-        position: relative;
-        bottom: 620px;
-        transition: 0.3s;
-    }.openbtn:hover {
-        background-color: #444;
-    }#main {
-        transition: margin-left .5s; /* EFEITO DE TRANSIÇÃO E O TEMPO DE DURAÇÃO */
-        padding: 20px;
-    }@media screen and (max-height: 450px) {
-        .sidebar {padding-top: 15px;}
-        .sidebar a {font-size: 18px;}
-    } .txt1, .txt2 {
-        color:white;
-    }.txt3{
-        color: white;
-        width: 300px;
-        font-size: 1.5em;
-        text-align: justify;
-        position: relative;
+        body,
+        html {
+            background: #210334;
+        }
 
-    }.txt4, .txt5, .txt6{
-        color: white;
-        width: 300px;
-        font-size: 1.5em;
-        text-align: justify;
-        position: relative;
+        .tec {
+            width: 100%;
+            height: 13cm;
+            z-index: 0;
+            border: 2px solid black;
+        }
 
-    }
-    .block1, .block2, .block3, .block4{
-        width: 300px;
-        padding: 30px;
-        position: relative;
-        left: 7%;
-        bottom: 5cm;
-        background: #2f3640;
-        text-align: left;
-        border-radius: 12px;
-        display: inline-block;
-        
-    }
+        .home {
+            position: relative;
+            width: 60px;
+            padding: 15px;
+            right: 6px;
+            background-color: #2f3640;
+            top: 155px;
+        }
+
+        .title {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 3em;
+            text-align: center;
+            position: relative;
+            bottom: 2.5cm;
+        }
+
+        button {
+            background: none;
+            position: relative;
+            border-radius: 24px;
+            border: 0;
+            right: 6px;
+        }
+
+        .sidebar {
+            height: 100%;
+            /* VAI OCUPAR 100% DA ALTURA DA PAGINA */
+            width: 0;
+            /* ALTERA COM JAVASCRIPT */
+            position: fixed;
+            /* SERVE PRA MANTER NO LUGAR */
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            /* DESABILIDA O SCROLL VERTICAL!!!!!!!!!!!!!!! */
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+            /* POSIÇÃO E STYLE DO CLOSE BUTTON (top right corner) */
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: 2px solid white;
+            position: relative;
+            bottom: 620px;
+            transition: 0.3s;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            /* EFEITO DE TRANSIÇÃO E O TEMPO DE DURAÇÃO */
+            padding: 20px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+
+        .txt1,
+        .txt2 {
+            color: white;
+        }
+
+        .txt3 {
+            color: white;
+            width: 300px;
+            font-size: 1.5em;
+            text-align: justify;
+            position: relative;
+
+        }
+
+        .txt4,
+        .txt5,
+        .txt6 {
+            color: white;
+            width: 300px;
+            font-size: 1.5em;
+            text-align: justify;
+            position: relative;
+
+        }
+
+        .block1,
+        .block2,
+        .block3,
+        .block4 {
+            width: 300px;
+            padding: 30px;
+            position: relative;
+            left: 7%;
+            bottom: 5cm;
+            background: #2f3640;
+            text-align: left;
+            border-radius: 12px;
+            display: inline-block;
+
+        }
     </style>
     <title>Sobre Nós</title>
 </head>
+
 <body>
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -128,24 +178,40 @@
         <p class="txt2">conteudo conteudo conteudo conteudo </p> -->
 
     </div>
-    <div class="block1"> 
-        <p class="txt3">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.
-         Aenean sit amet nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
-         A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate.</p>
-     </div>
-     <div class="block2">
-     <p class="txt4">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.
-         Aenean sit amet nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
-         A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate.</p>
-     </div>
-     
-     <div class="block3"><p class="txt5"> Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.
-         Aenean sit amet nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
-         A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate.</p></div>
-     
-     <div class="block4"><p class="txt6">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.
-         Aenean sit amet nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
-         A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate.</p></div>
+    <div class="block1">
+        <p class="txt3">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit
+            hendrerit.
+            Aenean sit amet nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
+            odio.
+            A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
+            Nam vulputate.</p>
+    </div>
+    <div class="block2">
+        <p class="txt4">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit
+            hendrerit.
+            Aenean sit amet nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
+            odio.
+            A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
+            Nam vulputate.</p>
+    </div>
+
+    <div class="block3">
+        <p class="txt5"> Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit
+            hendrerit.
+            Aenean sit amet nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
+            odio.
+            A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
+            Nam vulputate.</p>
+    </div>
+
+    <div class="block4">
+        <p class="txt6">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit
+            hendrerit.
+            Aenean sit amet nisi.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
+            odio.
+            A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
+            Nam vulputate.</p>
+    </div>
 
 
 
@@ -155,9 +221,10 @@
     function openNav() {
         document.getElementById("sidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
-}/* Bota o width da sidebar pra 0 e o left margin pra 0 */
+    }/* Bota o width da sidebar pra 0 e o left margin pra 0 */
     function closeNav() {
         document.getElementById("sidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
-}</script>
+    }</script>
+
 </html>
