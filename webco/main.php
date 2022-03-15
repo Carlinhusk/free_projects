@@ -77,7 +77,7 @@ include('verifica_login.php');
     }.openbtn:hover {
         background-color: #444;
     }#main {
-        transition: margin-left .5s; /* If you want a transition effect */
+        transition: margin-left .5s; /* Efeito de transição */
         padding: 20px;
     }@media screen and (max-height: 450px) {
         .sidebar {padding-top: 15px;}
@@ -124,8 +124,8 @@ include('verifica_login.php');
         document.getElementById("sidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
         document.getElementById("sidebar").style.overflow = 'hidden';
-        document.body.scroll = "no"; // IE
-}/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        document.body.scroll = "no"; 
+    }
     function closeNav() {
         document.getElementById("sidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";

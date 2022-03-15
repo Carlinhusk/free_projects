@@ -11,7 +11,7 @@
     display: block;
     background-color: #1C1C1C;
     display: inline-block;
-    position: fixed;
+
 }
 .header_img{
     position: relative;
@@ -39,8 +39,9 @@
     color: white;
 }
 .box_1{
-    background-color: #101010;
+    background-color: #000201;
     background-image: url("carro_fundo.jpg");
+    background-repeat: no-repeat;
     height: 38cm;
     position: relative;
     bottom: 39px;
