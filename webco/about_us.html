@@ -9,6 +9,11 @@
         body,
         html {
             background: #210334;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', sans-serif;
         }
 
         .tec {
@@ -88,9 +93,9 @@
             font-size: 20px;
             cursor: pointer;
             background-color: #111;
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 10px 15px;
-            border: 2px solid white;
+            border: 2px solid rgb(255, 255, 255);
             position: relative;
             bottom: 620px;
             transition: 0.3s;
@@ -118,29 +123,28 @@
 
         .txt1,
         .txt2 {
-            color: white;
+            color: rgb(255, 255, 255);
         }
 
         .txt3 {
-            color: white;
+            color: rgb(255, 255, 255);
             width: 300px;
             font-size: 1.5em;
             text-align: justify;
-            position: relative;
 
         }
 
         .txt4,
         .txt5,
         .txt6 {
-            color: white;
+            color: rgb(255, 255, 255);
             width: 300px;
             font-size: 1.5em;
             text-align: justify;
-            position: relative;
+
 
         }
-
+/*
         .block1,
         .block2,
         .block3,
@@ -155,6 +159,23 @@
             border-radius: 12px;
             display: inline-block;
 
+        }*/
+        .all_blocks{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .block1,
+        .block2,
+        .block3,
+        .block4 {
+            display: flex;
+            flex-direction: row;
+            border-radius: 12px;
+            width: 270px;
+            padding: 30px;
+            background: #2f3640;
         }
     </style>
     <title>Sobre Nós</title>
@@ -165,7 +186,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="main.php">Início</a>
         <a href="about_us.html">Sobre Nós</a>
-        <a href="">Projetos</a>
+        <a href="projects.html">Projetos</a>
         <a href="">Equipe</a>
         <a href="">Parceiros</a>
         <a href="">Contato</a>
@@ -178,6 +199,7 @@
         <p class="txt2">conteudo conteudo conteudo conteudo </p> -->
 
     </div>
+    <div class="all_blocks">
     <div class="block1">
         <p class="txt3">Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit
             hendrerit.
@@ -212,7 +234,7 @@
             A ordem dos tratores não altera o pão duris.Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
             Nam vulputate.</p>
     </div>
-
+</div>
 
 
 

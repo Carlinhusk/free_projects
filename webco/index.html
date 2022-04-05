@@ -13,21 +13,24 @@
            background-image: radial-gradient(ellipse farthest-corner at 45px 45px, #7159c1 0%, #2d2153 50%, rgba(5,5,5,1) 95% );
             -webkit-font-smoothing: antialiased; */
         }
-
+        .general{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
         .box {
+            display: flex;
+            flex-direction: column;
+            border-left: 300px;
             width: 300px;
             padding: 40px;
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 30%);
             background: #2f3640;
             text-align: center;
             border-radius: 12px;
         }
 
         .box h2 {
-            color: white;
+            color: rgb(255, 255, 255);
             text-transform: uppercase;
             font-weight: 500;
             font-size: 2.5em;
@@ -45,7 +48,7 @@
             padding: 14px 10px;
             width: 200px;
             outline: none;
-            color: white;
+            color: rgb(255, 255, 255);
             /* Border radius vai alisar os cantos, deixando redondo */
             border-radius: 24px;
             transition: 0.15s;
@@ -70,7 +73,7 @@
             border: 2px solid #3498db;
             padding: 14px 40px;
             outline: none;
-            color: white;
+            color: rgb(255, 255, 255);
             border-radius: 24px;
             transition: 00.25s;
             cursor: pointer;
@@ -88,12 +91,12 @@
         }
 
         .forgot-pass {
-            color: white;
+            color: rgb(255, 255, 255);
             font-size: 1em;
         }
 
         a {
-            color: white;
+            color: rgb(255, 255, 255);
             font-size: 1.5em;
         }
     </style>
