@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <title>Document</title>
 </head>
 
@@ -46,16 +46,63 @@
                         <a href="">Get in touch</a>
                     </div>
                 </div>
-                <div class="slide">
-                    ...2
+                <div class="slidearea">
+                    <div class="slide">
+                        <h1>design is about <br> <span>socialization</span></h1>
+                        <h2>Call us: +00 0 4651 7398</h2>
+                        <a href="">Get in touch</a>
+                    </div>
                 </div>
-                <div class="slide">
-                    ...3
+                <div class="slidearea">
+                    <div class="slide">
+                        <h1>design is about <br> <span>collaboration</span></h1>
+                        <h2>Call us: +00 0 4002 8922</h2>
+                        <a href="">Get in touch</a>
+                    </div>
                 </div>
+            </div>
+            <div class="arrows">
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div class="sliders_pointers">
+                <div class="pointer active" onclick="currentSlide(1)"></div>
+                <div class="pointer" onclick="currentSlide(2)"></div>
+                <div class="pointer" onclick="currentSlide(3)"></div>
             </div>
         </section>
     </main>
 
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slide");
+          let dots = document.getElementsByClassName("pointer");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "flex";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
 </body>
 
 </html>
