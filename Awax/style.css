@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 body{
@@ -289,4 +291,64 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 .section-services--default.lastone{
     border-right: solid rgb(105, 105, 105) 2px ;
+}
+
+/* */
+
+
+
+/*-----------------------------------------------------coworkers---------------*/
+
+.section-team-general{
+    display: flex;
+    flex-direction: row;
+}
+.section-team--default{
+    background-color: #f7f7f7;
+    width: 300px;
+    height: 370px;
+    flex: 1;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #000;
+    text-align: center;
+}
+
+.section-team-img{
+    text-align: center;
+    padding-top: 10px;
+}
+.section-team-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.section-team-desc{
+    padding-top: 10px;
+}
+.section-team-links{
+    display: flex;
+    flex-direction: row;
+    width: 290px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+.section-team-socials{
+    background-color: #333;
+    width: 10px;
+    height: 30px;
+    flex: 1;
+    border-radius: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 30px;
+}
+.section-team-socials img{
+    display: flex;
+        
 }
