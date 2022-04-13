@@ -73,6 +73,7 @@ header{
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
+    
 }
 .banner .sliders{
     width: 1000vw;
@@ -294,10 +295,139 @@ CSS DE ÁREAS ESPECÍFICAS
     border-right: solid rgb(105, 105, 105) 2px ;
 }
 
-/* */
+
+
+/*-------------------------------------------our projects--------------------------*/
 
 
 
+.section-projects-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-projects-option ul,
+.section-projects-option li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.section-projects-option ul{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEDED;
+    border-radius: 350px;
+    border: solid 2px #E4E4E4;
+}
+.section-projects-option li{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    justify-content: center;
+    user-select:none;
+    cursor: pointer;
+    border-right: solid 2px #E4E4E4;
+    border-bottom: solid 2px transparent;
+    transition: 0.2s;
+    height: 50px;
+    padding-top: 17px;
+}
+
+.section-projects-option .active li,
+.section-projects-option li:hover{
+    border-bottom:solid 2px #B28756;
+}
+
+.section-projects-option li:last-child{
+    border-right: none;
+}
+.section-projects-imgbox{
+    text-align: center;
+    display: grid;
+    height: 550px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    row-gap: 0px;
+    column-gap: 35px;
+}
+.section-projects-imgbox img{
+    width: 215px;
+}
+.section-projects--default{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.section-projects-learn{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius:30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #B28756;
+    justify-content: center;
+    width: 190px;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select:none;
+}
+.section-projects-learn:hover{
+    background-color: #a37138;
+}
+.section-projects-overlayimg{
+display: flex;
+flex-direction: column;
+grid-area: 1/1;
+text-transform: uppercase;
+padding-top: 10px;
+position: absolute;
+display: flex;
+height: 135px;
+width: 215px;
+opacity: 0;
+transition: .5s ease;
+background-color: #000000;
+color: #fff;
+}
+.section-projects-overlayimg-desc{
+    text-transform: lowercase;
+    font-weight: 400;
+    color: #E4E4E4;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section-projects-overlayimg-text{
+color: #fff;
+font-size: 20px;
+text-align: center;
+}
+.wrapper{
+    display: grid;
+}
+.images:hover .section-projects-overlayimg{
+    opacity: 0.7;
+}
 /*-----------------------------------------------------coworkers---------------*/
 
 .section-team-general{
@@ -377,20 +507,19 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 
 .default.dark.bgimg{
+
     width: 100vw;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.7);
     
-    
 }
 .darker-bg{
     background-image: url(img/city.jpg);
-    background-color: #333;
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
     height: 600px;
-}
 
+}
 
 
