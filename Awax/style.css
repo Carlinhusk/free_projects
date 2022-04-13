@@ -183,6 +183,7 @@ header{
 }
 .default .section-title{
     font-size: 20px;
+    font-weight: bold;
 }
 .default .section-desc{
     font-size: 12px;
@@ -338,17 +339,58 @@ CSS DE ÁREAS ESPECÍFICAS
     text-align: center;
     margin-left: 20px;
 }
-.section-team-socials{
-    background-color: #333;
+.section-team-socials, .section-team-socials-points{
+
     width: 10px;
     height: 30px;
     flex: 1;
     border-radius: 20px;
+    background-color: #333;
     margin-left: 6px;
     margin-right: 6px;
     margin-top: 30px;
+    text-align: center;
+    color: #f7f7f7;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+
 }
 .section-team-socials img{
-    display: flex;
-        
+    display: block;
+    margin: auto;
+    margin-top: 9px;
 }
+.section-team-socials-points{
+    text-align: center;
+    align-items: center;
+    padding-top: 4px;
+    user-select:none;
+    transition: 0.3s;
+}
+
+.section-team-socials:hover,
+.section-team-socials-points:hover{
+    background-color: #B28756;
+}
+
+.default.dark.bgimg{
+    width: 100vw;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    
+}
+.darker-bg{
+    background-image: url(img/city.jpg);
+    background-color: #333;
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    height: 600px;
+}
+
+
+
