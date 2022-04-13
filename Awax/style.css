@@ -522,4 +522,75 @@ text-align: center;
 
 }
 
+/*-------------------------------------happyclients----------------------------- */
+.section-clients--default{
+    text-align: center;
+}
 
+.section-clients-img{
+    text-align: center;
+}
+.section-clients-names{
+    text-align: center;
+    padding-top: 25px;
+}
+.section-clients-names .name{
+    font-size: 25px;
+    font-weight: bold;
+}
+.section-clients-desc{
+    flex-direction: column;
+    display: flex;
+    padding-top:50px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.section-clients-desc-txt{
+    display: flex;
+    width: 600px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    color: rgb(184, 184, 184);
+}
+
+.sliders_pointers{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding-top: 60px;
+}
+
+.pointer{
+    width: 15px;
+    height: 15px;
+    border: solid 2px #B28756;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pointer.active{
+    background-color: #B28756;
+}
+
+/*--------------------------partners------------------------------ */
+
+.section-partners-logo{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    max-width: 1140px;
+    font-weight: 600;
+}
+.logos{
+    flex: 1;
+}
