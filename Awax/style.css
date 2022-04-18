@@ -124,7 +124,7 @@ header{
     width: 100vw;
     height: 20px;
     position: absolute;
-    margin-top: -50px;
+    margin-top: -100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,7 +556,7 @@ text-align: center;
     color: rgb(184, 184, 184);
 }
 
-.sliders_pointers{
+.sliders-pointers{
     height: 20px;
     display: flex;
     justify-content: center;
@@ -566,7 +566,7 @@ text-align: center;
     padding-top: 60px;
 }
 
-.pointer{
+.pointers{
     width: 15px;
     height: 15px;
     border: solid 2px #B28756;
@@ -577,20 +577,41 @@ text-align: center;
     margin-right: 5px;
 }
 
-.pointer.active{
+.sliders-pointers .pointers.active{
     background-color: #B28756;
 }
 
+.default.border {
+    border-bottom:solid 1px #d7d7d7;
+}
 /*--------------------------partners------------------------------ */
 
 .section-partners-logo{
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
     margin: auto;
     max-width: 1140px;
     font-weight: 600;
 }
 .logos{
     flex: 1;
+}
+
+/*-------------------prices-----------------*/
+
+.default.grey{
+    background-color: #EDEDED;
+}
+
+.section-prices--default{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-prices-boxes{
+    width: 215px;
+    height: 295px;
+    background-color: #fff;
+    flex: 1;
+    margin-left: 25px;
+    margin-right: 25px;
 }
