@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <script src="script.js"></script>
     <title>Awax</title>
 </head>
 
@@ -23,10 +24,10 @@
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="#about_us">About us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Our team</a></li>
-                        <li><a href="">Happy clients</a></li>
-                        <li><a href="">Our projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#ourProjects">Our projects</a></li>
+                        <li><a href="#ourTeam">Our team</a></li>
+                        <li><a href="#happyClients">Happy clients</a></li>
                         <li><a href="">Prices</a></li>
                         <li><a href="">Some facts</a></li>
                         <li><a href="">Contact us</a></li>
@@ -42,23 +43,23 @@
                 <div class="slide">
                     <div class="slidearea">
                         <h1>design is about <br> <span>communication</span></h1>
-                        <h2>Call us: +00 0 1234 5678</h2>
+                        <h2>Call us: +55 49 1234 5678</h2>
                         <a href="">Get in touch</a>
                     </div>
                 </div>
-                <div class="slidearea">
                 <div class="slide">
-                    <h1>design is about <br> <span>socialization</span></h1>
-                    <h2>Call us: +00 0 4651 7398</h2>
-                    <a href="">Get in touch</a>
+                    <div class="slidearea">
+                        <h1>design is about <br> <span>socialization</span></h1>
+                        <h2>Call us: +55 49 1234 5678</h2>
+                        <a href="">Get in touch</a>
+                    </div>
                 </div>
-                </div>
-                <div class="slidearea">
                 <div class="slide">
-                    <h1>design is about <br> <span>collaboration</span></h1>
-                    <h2>Call us: +00 0 4002 8922</h2>
-                    <a href="">Get in touch</a>
-                </div>
+                    <div class="slidearea">
+                        <h1>design is about <br> <span>collaboration</span></h1>
+                        <h2>Call us: +55 49 1234 5678</h2>
+                        <a href="">Get in touch</a>
+                    </div>
                 </div>
             </div>
             <div class="arrows">
@@ -106,7 +107,7 @@
                 </div>
             </div>
         </section>
-        <section class="default dark">
+        <section id="services"class="default dark">
             <div class="section-title">
                 Services
             </div>
@@ -146,7 +147,7 @@
                 
             </div>
         </section>
-        <section class="default light">
+        <section class="default light" id="ourProjects">
             <div class="section-title">
                 our projects
             </div>
@@ -332,7 +333,7 @@
         </section>
 
         <div class="darker-bg">
-            <section class="default dark bgimg">
+            <section class="default dark bgimg" id="ourTeam">
         
                 <div class="section-title">
                     our team
@@ -389,7 +390,7 @@
             </div>
         </section>
 
-        <section class="default light">
+        <section class="default light" id="happyClients">
             <div class="section-title">
                 happy clients
             </div>
@@ -422,7 +423,7 @@
             </div>
         </section>
 
-        <section class="partners">
+        <section class="partners" id="partners">
             <div class="section-partners-general">
                 <div class="section-partners-logo">
                     <div class="logos">
@@ -447,6 +448,9 @@
             </div>
         </section>
 
+
+
+<!--
         <section class="default light">
             <div class="section-title">
                 happy clients
@@ -458,37 +462,8 @@
 
             </div>
         </section>
+-->
     </main>
-
-
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("slide");
-          let dots = document.getElementsByClassName("pointer");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
         
 </body>
 
